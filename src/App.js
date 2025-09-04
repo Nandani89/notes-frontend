@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Search, Plus, Share2, Edit3, Trash2, Heart, Star, X, Check, Copy } from 'lucide-react';
 
-const API_BASE_URL = 'http://localhost:8081/api';
+// const API_BASE_URL = 'http://localhost:8081/api'; // old local URL
+const API_BASE_URL = 'https://notes-backend-production-eeaa.up.railway.app/api'; // new production URL
 
 const NotesApp = () => {
   const [notes, setNotes] = useState([]);
